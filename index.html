@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <script> 
+    function addition(a,b){
+        if (a == 0){
+            return "you cannot add anything with 0"
+        }
+        else if(b == 0) {
+            return "the answer is the number that you have put in the first number " + a;
+        
+        }
+        else {
+            return a + b;
+        }
+
+    }
+    function subtraction(a,b){
+        return a - b;
+    }
+    function multiplication(a,b){
+        return a * b;
+    }
+    function division(a,b){
+        if (b == 0) {
+            return "Error: division by zero";
+        } else {
+            return a / b;
+        }
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .purple {
+        color: purple;
+      }
+      .red 
+    </style>
+</head>
+<body>
+  <label for="firstnumber" class="purple">First number: </label>
+  <input type="number" id="firstnumber" name="firstnumber" class="purple"><br><br>
+  <label for="secondnumber" class="purple">Second number:</label>
+  <input type="number" id="secondnumber" name="secondnumber" class="purple"><br><br>
+  <button type="button" onclick="alert(addition(parseInt(firstnumber.value), parseInt(secondnumber.value)))">Addition</button>
+  <button type="button" onclick="alert(subtraction(parseInt(firstnumber.value), parseInt(secondnumber.value)))">Subtraction</button>
+  <button type="button" onclick="alert(multiplication(parseInt(firstnumber.value), parseInt(secondnumber.value)))">Multiplication</button>
+  <button type="button" onclick="alert(division(parseInt(firstnumber.value), parseInt(secondnumber.value)))">Division</button>
+</body>
+</html>
